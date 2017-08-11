@@ -1,0 +1,30 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <div class="circle">
+    <div class="circle2 align-center"></div>
+    <div class="circle3 align-center"></div>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <%= link_to 'cocktails', cocktails_path, :class=>"navbar-wagon-item navbar-wagon-link"%>
+    <%= link_to 'Add cocktail', new_cocktail_path, :class=>"navbar-wagon-item navbar-wagon-link"%>
+
+    <!-- Profile picture with dropdown list -->
+    <%= link_to 'Sign in', cocktails_path, :class=>"btn btn-outline-primary"%>
+
+    <%= link_to 'login', cocktails_path, :class=>"btn btn-primary"%>
+
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><%= link_to 'cocktails', cocktails_path%></li>
+        <li><%= link_to 'Add Cocktail', new_cocktail_path %></li>
+      </ul>
+    </div>
+  </div>
+</div>

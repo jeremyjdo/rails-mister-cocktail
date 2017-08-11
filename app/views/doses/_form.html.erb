@@ -1,5 +1,12 @@
 <%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.input :ingredient_id, collection: @ingredients %>
+  <% if @dose.errors.any? %>
+    <ul>
+      <% @dose.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <%= f.input :description, prompt: "how much ?" %>
+  <%= f.association :ingredient, prompt: "Choose a Ingredient"%>
   <%= f.button :submit %>
 <% end %>

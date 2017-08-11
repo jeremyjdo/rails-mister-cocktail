@@ -6,6 +6,7 @@ class CocktailsController < ApplicationController
   end
 
   def show
+    @dose = Dose.new
   end
 
   def new
@@ -29,10 +30,11 @@ class CocktailsController < ApplicationController
   #   redirect_to cocktail_path(@cocktail)
   # end
 
-  def destroy
-    @cocktail.destroy
-    redirect_to cocktails_path
-  end
+  # def destroy
+  #   @cocktail = @dose.cocktail
+  #   @cocktail.destroy
+  #   redirect_to cocktails_path
+  # end
 
   private
 

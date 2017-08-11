@@ -1,0 +1,32 @@
+.circle{
+  position: relative;
+  background-color: transparentize($blue,0.8);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.circle2{
+  position: absolute;
+  background-color: $blue;
+  border-radius: 50%;
+  opacity: 0.6;
+  width: 20px;
+  height: 20px;
+}
+
+.circle3{
+  position: absolute;
+  background-color: $blue;
+  border-radius: 50%;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+.align-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

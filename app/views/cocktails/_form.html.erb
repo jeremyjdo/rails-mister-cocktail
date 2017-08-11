@@ -1,4 +1,11 @@
 <%= simple_form_for @cocktail do |f| %>
+  <% if @cocktail.errors.any? %>
+    <ul>
+      <% @cocktail.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
   <%= f.input :name %>
   <%= f.button :submit %>
 <% end %>
