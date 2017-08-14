@@ -13,5 +13,32 @@
 @import "layouts/index";
 @import "components/index";
 @import "components/navbar";
+@import "components/banner";
 @import "components/circle";
+@import "components/post";
 @import "pages/index";
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1170px;
+}
+
+body {
+  color: #333;
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+}
+
+.padded {
+  padding: 20px 0px;
+}
+

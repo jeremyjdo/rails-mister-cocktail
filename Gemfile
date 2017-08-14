@@ -38,6 +38,8 @@ gem 'autoprefixer-rails'
 gem 'jquery-rails'
 
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 0.11.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
